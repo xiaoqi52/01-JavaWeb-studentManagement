@@ -20,6 +20,7 @@ public class RegisterServlet extends HttpServlet {
         try {
             String username=request.getParameter("username");
             String password=request.getParameter("password");
+//            System.out.println(username+"==="+password+"===");
             User user=new User();
             user.setUsername(username);
             user.setPassword(password);
